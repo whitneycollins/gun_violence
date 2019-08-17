@@ -21,23 +21,24 @@ var map = L.map("map", {
     var markers = L.markerClusterGroup();
   
     // Loop through data
-    for (var i = 0; i < response.length; i++) {
-  
+    for (var i = 0; i < response.features.length; i++) {
+ 
       // Set the data location property to a variable
-      var location = response[i].geometry;
-  
+      var points = response.features[i];
+   
       // Check for location property
-      if (location) {
-  
+      if (points) {
+        // console.log(response)
         // Add a new marker to the cluster group and bind a pop-up
-        markers.addLayer(L.marker([location.coordinates[1], location.coordinates[0]])
-          .bindPopup(response[i].geometry));
+        markers.addLayer(L.marker([points.geometry.coordinates[1], points.geometry.coordinates[0]])
+            .bindPopup(response.features[i].descriptor));
       }
   
     }
   
     // Add our marker cluster layer to the map
     map.addLayer(markers);
+   
   
   });
   
