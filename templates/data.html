@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gun Violence</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+<div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" style="background-color: rgb(199, 58, 58);" href="/">Gun Violence and Mass Shootings in
+            America</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/plots/sunburst">Sunburst</a>
+                        <a class="dropdown-item" href="/plots/mass_map">Mass Shootings Map</a>
+                        <a class="dropdown-item" href="/plots/cluster_map">Cluster Map</a>
+                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="/comparisons">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/data">Data</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-16">
+                <div class="box">
+                    <h3 class="title">Data</h3>
+                    <hr>
+                    </hr>
+                    <p>The following table includes all of the data used for plotting during this project.</p>
+                    <a class = "nav-link" href="https://www.motherjones.com/politics/2012/12/mass-shootings-mother-jones-full-data/">Click here to download the data.</a>
+    
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th title="Field #1">Type</th>
+                                        <th title="Field #2">Gender</th>
+                                        <th title="Field #3">Legal Weapons</th>
+                                        <th title="Field #4">Mental Health Issues</th>
+                                        <th title="Field #5">Location</th>
+                                        <th title="Field #6">Race</th>
+                                        <th title="Field #7">Latitude</th>
+                                        <th title="Field #8">Longitude</th>
+                                        <th title="Field #9">Total_Victims</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Female</td>
+                                        <td>Unknown</td>
+                                        <td>TBD</td>
+                                        <td>Government Building</td>
+                                        <td>Native American</td>
+                                        <td align="right">41.487104</td>
+                                        <td align="right">-120.542237</td>
+                                        <td align="right">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Female</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">34.425571</td>
+                                        <td align="right">-119.866069</td>
+                                        <td align="right">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Female</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>African American</td>
+                                        <td align="right">39.455658</td>
+                                        <td align="right">-76.208485</td>
+                                        <td align="right">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Race Unknown</td>
+                                        <td align="right">27.828025</td>
+                                        <td align="right">-97.548198</td>
+                                        <td align="right">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Military</td>
+                                        <td>Race Unknown</td>
+                                        <td align="right">31.135557</td>
+                                        <td align="right">-97.783664</td>
+                                        <td align="right">43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>School</td>
+                                        <td>Race Unknown</td>
+                                        <td align="right">43.289538</td>
+                                        <td align="right">-123.333193</td>
+                                        <td align="right">18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Club</td>
+                                        <td>Race Unknown</td>
+                                        <td align="right">28.519718</td>
+                                        <td align="right">-81.376777</td>
+                                        <td align="right">102</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Military</td>
+                                        <td>Race Unknown</td>
+                                        <td align="right">35.047157</td>
+                                        <td align="right">-85.311819</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>TBD</td>
+                                        <td>School</td>
+                                        <td>Native American</td>
+                                        <td align="right">48.050824</td>
+                                        <td align="right">-122.176918</td>
+                                        <td align="right">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Native American</td>
+                                        <td align="right">47.876346</td>
+                                        <td align="right">-95.0169401</td>
+                                        <td align="right">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>Race Unknown</td>
+                                        <td align="right">28.580295</td>
+                                        <td align="right">-81.294086</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Public</td>
+                                        <td>Race Unknown</td>
+                                        <td align="right">36.997191</td>
+                                        <td align="right">-121.584819</td>
+                                        <td align="right">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Store</td>
+                                        <td>Race Unknown</td>
+                                        <td align="right">48.461367</td>
+                                        <td align="right">-122.337918</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Resturant</td>
+                                        <td>Race Unknown</td>
+                                        <td align="right">34.176946</td>
+                                        <td align="right">-118.874793</td>
+                                        <td align="right">34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Latino</td>
+                                        <td align="right">33.7877944</td>
+                                        <td align="right">-117.8531119</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>Latino</td>
+                                        <td align="right">41.847667</td>
+                                        <td align="right">-87.622009</td>
+                                        <td align="right">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Residence</td>
+                                        <td>Latino</td>
+                                        <td align="right">25.864338</td>
+                                        <td align="right">-80.311775</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Military</td>
+                                        <td>Latino</td>
+                                        <td align="right">31.141716</td>
+                                        <td align="right">-97.777559</td>
+                                        <td align="right">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>Latino</td>
+                                        <td align="right">35.349388</td>
+                                        <td align="right">-118.916335</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Resturant</td>
+                                        <td>Latino</td>
+                                        <td align="right">39.1637984</td>
+                                        <td align="right">-119.7674034</td>
+                                        <td align="right">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Airport</td>
+                                        <td>Latino</td>
+                                        <td align="right">26.072751</td>
+                                        <td align="right">-80.143382</td>
+                                        <td align="right">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Public</td>
+                                        <td>Latino</td>
+                                        <td align="right">44.204124</td>
+                                        <td align="right">-88.467541</td>
+                                        <td align="right">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Latino</td>
+                                        <td align="right">39.101981</td>
+                                        <td align="right">-84.511782</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Latino</td>
+                                        <td align="right">27.966479</td>
+                                        <td align="right">-82.570586</td>
+                                        <td align="right">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Private Building</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">37.792968</td>
+                                        <td align="right">-122.397973</td>
+                                        <td align="right">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">35.8209895</td>
+                                        <td align="right">-90.6682606</td>
+                                        <td align="right">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Private Building</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">43.045601</td>
+                                        <td align="right">-74.984891</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Residence</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">47.6229</td>
+                                        <td align="right">-122.3165</td>
+                                        <td align="right">9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Resturant</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">35.0529931</td>
+                                        <td align="right">-78.8787058</td>
+                                        <td align="right">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Resturant</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">31.1171194</td>
+                                        <td align="right">-97.7277959</td>
+                                        <td align="right">44</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">39.07868761</td>
+                                        <td align="right">-121.5475762</td>
+                                        <td align="right">14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">39.9589</td>
+                                        <td align="right">-76.0806</td>
+                                        <td align="right">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">37.76721</td>
+                                        <td align="right">-87.5573742</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>TBD</td>
+                                        <td>Public</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">40.018759</td>
+                                        <td align="right">-122.393089</td>
+                                        <td align="right">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>TBD</td>
+                                        <td>School</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">29.392825</td>
+                                        <td align="right">-95.141972</td>
+                                        <td align="right">23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>TBD</td>
+                                        <td>Public</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">40.052151</td>
+                                        <td align="right">-79.389166</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>TBD</td>
+                                        <td>Store</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">40.7606467</td>
+                                        <td align="right">-111.89109</td>
+                                        <td align="right">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>TBD</td>
+                                        <td>Store</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">39.876374</td>
+                                        <td align="right">-104.986132</td>
+                                        <td align="right">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">41.529546</td>
+                                        <td align="right">-75.94722</td>
+                                        <td align="right">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">38.881031</td>
+                                        <td align="right">-104.849057</td>
+                                        <td align="right">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Public</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">39.757312</td>
+                                        <td align="right">-84.184947</td>
+                                        <td align="right">36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Religious</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">40.443898</td>
+                                        <td align="right">-79.921398</td>
+                                        <td align="right">17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">38.994548</td>
+                                        <td align="right">-76.543657</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">31.771068</td>
+                                        <td align="right">-106.375655</td>
+                                        <td align="right">48</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Concert</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">36.095739</td>
+                                        <td align="right">-115.171544</td>
+                                        <td align="right">604</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Religious</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">32.788387</td>
+                                        <td align="right">-79.933143</td>
+                                        <td align="right">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Residence</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">45.5719072</td>
+                                        <td align="right">-88.9028922</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Public</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">42.236689</td>
+                                        <td align="right">-85.674795</td>
+                                        <td align="right">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">35.6672015</td>
+                                        <td align="right">-97.42937037</td>
+                                        <td align="right">21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Public</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">38.83755</td>
+                                        <td align="right">-104.814251</td>
+                                        <td align="right">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Resturant</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">40.785142</td>
+                                        <td align="right">-77.839411</td>
+                                        <td align="right">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Private Building</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">32.925166</td>
+                                        <td align="right">-96.838676</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">44.0462362</td>
+                                        <td align="right">-123.0220289</td>
+                                        <td align="right">29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">39.604034</td>
+                                        <td align="right">-105.074103</td>
+                                        <td align="right">37</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">41.4123225</td>
+                                        <td align="right">-73.31142358</td>
+                                        <td align="right">29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Store</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">41.265719</td>
+                                        <td align="right">-96.067495</td>
+                                        <td align="right">13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">39.959034</td>
+                                        <td align="right">-82.596508</td>
+                                        <td align="right">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Concert</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">39.9622601</td>
+                                        <td align="right">-83.0007065</td>
+                                        <td align="right">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Military</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">47.61864486</td>
+                                        <td align="right">-117.6483587</td>
+                                        <td align="right">28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Private Building</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">42.3810555</td>
+                                        <td align="right">-76.8705777</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Private Building</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">35.333434</td>
+                                        <td align="right">-79.414592</td>
+                                        <td align="right">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Private Building</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">25.796491</td>
+                                        <td align="right">-80.226683</td>
+                                        <td align="right">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Religious</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">42.8858503</td>
+                                        <td align="right">-87.8631362</td>
+                                        <td align="right">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Religious</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">32.664511</td>
+                                        <td align="right">-97.384246</td>
+                                        <td align="right">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Resturant</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">47.6038321</td>
+                                        <td align="right">-122.3300624</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Resturant</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">32.5520013</td>
+                                        <td align="right">-117.0430813</td>
+                                        <td align="right">41</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">41.9294736</td>
+                                        <td align="right">-88.7503647</td>
+                                        <td align="right">26</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">37.9577016</td>
+                                        <td align="right">-121.2907796</td>
+                                        <td align="right">35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Store</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">32.335941</td>
+                                        <td align="right">-110.975132</td>
+                                        <td align="right">19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Store</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">33.741176</td>
+                                        <td align="right">-118.1046356</td>
+                                        <td align="right">9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">41.6856325</td>
+                                        <td align="right">-72.72983827</td>
+                                        <td align="right">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">42.4894801</td>
+                                        <td align="right">-83.1446485</td>
+                                        <td align="right">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">44.977425</td>
+                                        <td align="right">-93.310408</td>
+                                        <td align="right">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">32.410842</td>
+                                        <td align="right">-88.634539</td>
+                                        <td align="right">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">42.500429</td>
+                                        <td align="right">-71.075913</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">37.3688301</td>
+                                        <td align="right">-122.0363496</td>
+                                        <td align="right">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">33.850116</td>
+                                        <td align="right">-84.377839</td>
+                                        <td align="right">22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">38.2542376</td>
+                                        <td align="right">-85.759407</td>
+                                        <td align="right">21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Religious</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">29.273282</td>
+                                        <td align="right">-98.056488</td>
+                                        <td align="right">46</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Resturant</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">36.052521</td>
+                                        <td align="right">-86.616944</td>
+                                        <td align="right">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">34.436283</td>
+                                        <td align="right">-119.8714406</td>
+                                        <td align="right">19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">26.30483</td>
+                                        <td align="right">-80.269511</td>
+                                        <td align="right">34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">27.471043</td>
+                                        <td align="right">-81.45847</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Movie Theatre</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">39.706038</td>
+                                        <td align="right">-104.820594</td>
+                                        <td align="right">82</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Religious</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">43.0605671</td>
+                                        <td align="right">-88.1064787</td>
+                                        <td align="right">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Store</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">28.0331886</td>
+                                        <td align="right">-80.6429695</td>
+                                        <td align="right">20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Residence</td>
+                                        <td>Caucasian</td>
+                                        <td align="right">34.008617</td>
+                                        <td align="right">-118.494754</td>
+                                        <td align="right">9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>School</td>
+                                        <td>Asian</td>
+                                        <td align="right">41.6606893</td>
+                                        <td align="right">-91.5302214</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Asian</td>
+                                        <td align="right">37.765947</td>
+                                        <td align="right">-122.406087</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Government Building</td>
+                                        <td>Asian</td>
+                                        <td align="right">42.099802</td>
+                                        <td align="right">-75.917723</td>
+                                        <td align="right">18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Private Building</td>
+                                        <td>Asian</td>
+                                        <td align="right">33.9412127</td>
+                                        <td align="right">-84.2135309</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Asian</td>
+                                        <td align="right">37.8043808</td>
+                                        <td align="right">-122.2708166</td>
+                                        <td align="right">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>School</td>
+                                        <td>Asian</td>
+                                        <td align="right">37.2295733</td>
+                                        <td align="right">-80.4139393</td>
+                                        <td align="right">55</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Asian</td>
+                                        <td align="right">38.392496</td>
+                                        <td align="right">-122.366528</td>
+                                        <td align="right">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>Asian</td>
+                                        <td align="right">21.320063</td>
+                                        <td align="right">-157.876462</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Government Building</td>
+                                        <td>African American</td>
+                                        <td align="right">38.580093</td>
+                                        <td align="right">-90.40691</td>
+                                        <td align="right">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>African American</td>
+                                        <td align="right">33.5598586</td>
+                                        <td align="right">-81.721952</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Private Building</td>
+                                        <td>African American</td>
+                                        <td align="right">30.3321838</td>
+                                        <td align="right">-81.655651</td>
+                                        <td align="right">14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Residence</td>
+                                        <td>African American</td>
+                                        <td align="right">47.3129607</td>
+                                        <td align="right">-122.3393665</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>African American</td>
+                                        <td align="right">41.908163</td>
+                                        <td align="right">-87.879908</td>
+                                        <td align="right">9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>No Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>African American</td>
+                                        <td align="right">41.798764</td>
+                                        <td align="right">-72.570068</td>
+                                        <td align="right">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>African American</td>
+                                        <td align="right">39.452189</td>
+                                        <td align="right">-76.309988</td>
+                                        <td align="right">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>African American</td>
+                                        <td align="right">39.675599</td>
+                                        <td align="right">-104.844845</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>TBD</td>
+                                        <td>Public</td>
+                                        <td>African American</td>
+                                        <td align="right">36.746378</td>
+                                        <td align="right">-119.800319</td>
+                                        <td align="right">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>African American</td>
+                                        <td align="right">36.75442</td>
+                                        <td align="right">-76.060378</td>
+                                        <td align="right">16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Public</td>
+                                        <td>African American</td>
+                                        <td align="right">32.7801052</td>
+                                        <td align="right">-96.8000082</td>
+                                        <td align="right">16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>African American</td>
+                                        <td align="right">38.135992</td>
+                                        <td align="right">-97.425145</td>
+                                        <td align="right">17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Resturant</td>
+                                        <td>African American</td>
+                                        <td align="right">47.15277</td>
+                                        <td align="right">-122.467308</td>
+                                        <td align="right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Not Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>African American</td>
+                                        <td align="right">41.753725</td>
+                                        <td align="right">-88.331057</td>
+                                        <td align="right">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Unknown</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Public</td>
+                                        <td>African American</td>
+                                        <td align="right">30.433601</td>
+                                        <td align="right">-91.081403</td>
+                                        <td align="right">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Military</td>
+                                        <td>African American</td>
+                                        <td align="right">38.874981</td>
+                                        <td align="right">-76.99453</td>
+                                        <td align="right">20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Public</td>
+                                        <td>African American</td>
+                                        <td align="right">40.7267682</td>
+                                        <td align="right">-73.6342955</td>
+                                        <td align="right">25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spree</td>
+                                        <td>Male</td>
+                                        <td>Legal</td>
+                                        <td>Mental Health Issues</td>
+                                        <td>Workplace</td>
+                                        <td>African American</td>
+                                        <td align="right">26.119269</td>
+                                        <td align="right">-80.104119</td>
+                                        <td align="right">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>Male &amp; Female</td>
+                                        <td>Legal</td>
+                                        <td>TBD</td>
+                                        <td>Workplace</td>
+                                        <td>Race Unknown</td>
+                                        <td align="right">34.075961</td>
+                                        <td align="right">-117.27789</td>
+                                        <td align="right">35</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>                                    
+                </div>
+            </div>
+        </div>
+</body>
+
+    <footer>
+        <div class="footer">Created by Jeff, Ryan and Whitney</div>
+    </footer>
+
+</html>

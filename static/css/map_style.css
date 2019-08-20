@@ -1,0 +1,70 @@
+/* Navigation Bar */
+.navbar{
+    max-height: 57px;
+}
+.navigation .navbar-brand{
+    color: white;
+    margin-left: 45px;
+    padding: 14px;
+    font-weight: bold;
+    background-color: rgb(199, 58, 58);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+    background-color: white;
+    font-size: 20px;
+}
+
+a{
+    color: gray;
+    font-size: 18px;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+/* Footer */
+footer{
+background-color: gray;
+border-top-style: solid;
+border-top-width: 5px;
+border-top-color: rgb(22, 214, 205);
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+text-align: center;
+position: fixed;
+bottom: 0;
+width: 100%;
+padding: 10px;
+}
+
+/* Media Queries */
+@media(max-width: 760px){
+.navbar-expand-lg{
+background-color: rgb(22, 214, 205);
+}
+
+.navbar{
+    max-height: none;
+    padding: inherit;
+}
+.navbar div{
+    margin: inherit;
+    background-color: white;
+}
+.navbar-brand{
+    padding: 10px;
+}
+
+button{
+    margin-right: 30px;
+}
+button:focus{
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focusring-color;
+}
+}

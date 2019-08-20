@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gun Violence</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" style="background-color: rgb(199, 58, 58);" href="/">Gun Violence and Mass Shootings in
+        America</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/plots/sunburst">Sunburst</a>
+              <a class="dropdown-item" href="/plots/mass_map">Mass Shootings Map</a>
+              <a class="dropdown-item" href="/plots/cluster_map">Cluster Map</a>
+            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="/comparisons">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/data">Data</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-20 col-md-10">
+        <div class="box">
+          <h3 class="title">Takeaways</h3>
+          <hr>
+          </hr>
+          <p>
+          We analyzed two sets of data:
+          </p>
+          <p>
+          1. Mass shootings from 1982 to current day
+          </p>
+          <p>
+          2. and Gun Violence Incidents from 2014-2019 to shed light on non-mass shooting events
+          </p>
+          <p>
+          Here are the major take-aways for Gun Violence:
+          The number of gun violence incidents increased from 269 to 340 incidents from 2014-2018 - an increase of 26%.
+          Gun violence incidents peaked in 2016 but 2019 is on pace to surpass 2018 by about 14%.
+          </p>
+          <p>
+          We split the incidents by seasons (fall, winter, etc.)
+          If season had zero impact on incidents, we would expect that there would be no difference between seasons. Each season
+          would account for 25% of the total incidents.
+          The warmer the weather the more the incidents - summer in 2018 accounted for 38% of all incidents, fall 25%, spring 20%
+          and winter just 15%.
+          July is the most lethal month. March the least lethal.
+          </p>
+          <p>
+          We looked at the average number of time between gun violence incidents:
+          In 2014 the average time between incidents of gun violence was 2.10 days
+          By 2018 this figure had dropped to 1.68 days
+          Or ... another way to think about it is average time between incidents in 2014 was 50.4 hours, by 2018 it had decreased
+          to 40.3 hours between gun violence events.
+          </p>
+          <p>
+          We also looked at the number of people injured and killed from each of these events:
+          In 2014 each incident injured or killed 7.75 people.
+          By 2018 each incident injured or killed 10.13 people a 30% increase in lethality.
+        </p>
+        </div>
+      </div>
+
+      <div class="col-lg-10 col-md-16">
+        <div class="box">
+          <h3 class="title">Visualizations</h3>
+          <hr>
+          </hr>
+      
+          <div class="container">
+            <div class="row">
+              <div class="col-5">
+                  <img src="../static/images/average_casualties.png" alt="average_casualties" class="panel">
+              </div>
+              <div class="col-5">
+                  <img src="../static/images/days_between_incidents.png" alt="days_between_incidents" class="panel">
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col-5">
+                  <img src="../static/images/incidents_by_season.png" alt="incidents_by_season" class="panel">
+              </div>
+              <div class="col-5">
+                  <img src="../static/images/number_of_incidents.png" alt="number_of_incidents" class="panel">
+              </div>
+              
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<footer>
+    <div class="footer">Created by Jeff, Ryan and Whitney</div>
+</footer>
+
+</html>

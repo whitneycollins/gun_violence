@@ -1,0 +1,115 @@
+﻿Type,Gender,Legal Weapons,Mental Health Issues,Location,Race,Latitude,Longitude,Total_Victims
+Spree,Female,Unknown,TBD,Government Building,Native American,41.487104,-120.542237,6
+Mass,Female,Legal,Mental Health Issues,Workplace,Caucasian,34.425571,-119.866069,8
+Mass,Female,Legal,TBD,Workplace,African American,39.455658,-76.208485,6
+Mass,Male,Legal,No Mental Health Issues,Workplace,Race Unknown,27.828025,-97.548198,6
+Mass,Male,Legal,TBD,Military,Race Unknown,31.135557,-97.783664,43
+Mass,Male,Legal,TBD,School,Race Unknown,43.289538,-123.333193,18
+Mass,Male,Legal,TBD,Club,Race Unknown,28.519718,-81.376777,102
+Mass,Male,Legal,TBD,Military,Race Unknown,35.047157,-85.311819,7
+Mass,Male,Not Legal,TBD,School,Native American,48.050824,-122.176918,6
+Mass,Male,Not Legal,Mental Health Issues,School,Native American,47.876346,-95.0169401,15
+Mass,Male,Unknown,TBD,Workplace,Race Unknown,28.580295,-81.294086,5
+Mass,Male,Legal,TBD,Public,Race Unknown,36.997191,-121.584819,15
+Mass,Male,Unknown,Mental Health Issues,Store,Race Unknown,48.461367,-122.337918,5
+Mass,Male,Legal,Mental Health Issues,Resturant,Race Unknown,34.176946,-118.874793,34
+Spree,Male,Legal,No Mental Health Issues,Workplace,Latino,33.7877944,-117.8531119,7
+Mass,Male,Unknown,TBD,Workplace,Latino,41.847667,-87.622009,3
+Mass,Male,Legal,TBD,Residence,Latino,25.864338,-80.311775,7
+Mass,Male,Legal,TBD,Military,Latino,31.141716,-97.777559,15
+Spree,Male,Legal,TBD,Workplace,Latino,35.349388,-118.916335,5
+Mass,Male,Legal,Mental Health Issues,Resturant,Latino,39.1637984,-119.7674034,12
+Mass,Male,Legal,Mental Health Issues,Airport,Latino,26.072751,-80.143382,11
+Mass,Male,Legal,Mental Health Issues,Public,Latino,44.204124,-88.467541,4
+Mass,Male,Legal,Mental Health Issues,Workplace,Latino,39.101981,-84.511782,5
+Spree,Male,Legal,Mental Health Issues,Workplace,Latino,27.966479,-82.570586,8
+Mass,Male,Not Legal,No Mental Health Issues,Private Building,Caucasian,37.792968,-122.397973,15
+Mass,Male,Not Legal,No Mental Health Issues,School,Caucasian,35.8209895,-90.6682606,15
+Mass,Male,Legal,No Mental Health Issues,Private Building,Caucasian,43.045601,-74.984891,7
+Mass,Male,Legal,No Mental Health Issues,Residence,Caucasian,47.6229,-122.3165,9
+Mass,Male,Legal,No Mental Health Issues,Resturant,Caucasian,35.0529931,-78.8787058,12
+Mass,Male,Legal,No Mental Health Issues,Resturant,Caucasian,31.1171194,-97.7277959,44
+Mass,Male,Legal,No Mental Health Issues,School,Caucasian,39.07868761,-121.5475762,14
+Mass,Male,Legal,No Mental Health Issues,School,Caucasian,39.9589,-76.0806,11
+Spree,Male,Legal,No Mental Health Issues,Workplace,Caucasian,37.76721,-87.5573742,7
+Spree,Male,Not Legal,TBD,Public,Caucasian,40.018759,-122.393089,15
+Mass,Male,Unknown,TBD,School,Caucasian,29.392825,-95.141972,23
+Mass,Male,Unknown,TBD,Public,Caucasian,40.052151,-79.389166,5
+Mass,Male,Unknown,TBD,Store,Caucasian,40.7606467,-111.89109,10
+Mass,Male,Unknown,TBD,Store,Caucasian,39.876374,-104.986132,3
+Mass,Male,Unknown,TBD,Workplace,Caucasian,41.529546,-75.94722,3
+Mass,Male,Unknown,TBD,Workplace,Caucasian,38.881031,-104.849057,12
+Mass,Male,Legal,TBD,Public,Caucasian,39.757312,-84.184947,36
+Mass,Male,Legal,TBD,Religious,Caucasian,40.443898,-79.921398,17
+Mass,Male,Legal,TBD,Workplace,Caucasian,38.994548,-76.543657,7
+Mass,Male,Legal,TBD,Workplace,Caucasian,31.771068,-106.375655,48
+Mass,Male,Legal,TBD,Concert,Caucasian,36.095739,-115.171544,604
+Mass,Male,Legal,TBD,Religious,Caucasian,32.788387,-79.933143,10
+Mass,Male,Legal,TBD,Residence,Caucasian,45.5719072,-88.9028922,7
+Mass,Male,Legal,TBD,Public,Caucasian,42.236689,-85.674795,8
+Mass,Male,Legal,TBD,Workplace,Caucasian,35.6672015,-97.42937037,21
+Mass,Male,Legal,TBD,Public,Caucasian,38.83755,-104.814251,3
+Spree,Male,Legal,TBD,Resturant,Caucasian,40.785142,-77.839411,4
+Mass,Male,Not Legal,Mental Health Issues,Private Building,Caucasian,32.925166,-96.838676,7
+Mass,Male,Not Legal,Mental Health Issues,School,Caucasian,44.0462362,-123.0220289,29
+Mass,Male,Not Legal,Mental Health Issues,School,Caucasian,39.604034,-105.074103,37
+Mass,Male,Not Legal,Mental Health Issues,School,Caucasian,41.4123225,-73.31142358,29
+Spree,Male,Not Legal,Mental Health Issues,Store,Caucasian,41.265719,-96.067495,13
+Mass,Male,Unknown,Mental Health Issues,Workplace,Caucasian,39.959034,-82.596508,3
+Mass,Male,Legal,Mental Health Issues,Concert,Caucasian,39.9622601,-83.0007065,12
+Mass,Male,Legal,Mental Health Issues,Military,Caucasian,47.61864486,-117.6483587,28
+Mass,Male,Legal,Mental Health Issues,Private Building,Caucasian,42.3810555,-76.8705777,5
+Mass,Male,Legal,Mental Health Issues,Private Building,Caucasian,35.333434,-79.414592,11
+Mass,Male,Legal,Mental Health Issues,Private Building,Caucasian,25.796491,-80.226683,11
+Mass,Male,Legal,Mental Health Issues,Religious,Caucasian,42.8858503,-87.8631362,10
+Mass,Male,Legal,Mental Health Issues,Religious,Caucasian,32.664511,-97.384246,15
+Mass,Male,Legal,Mental Health Issues,Resturant,Caucasian,47.6038321,-122.3300624,7
+Mass,Male,Legal,Mental Health Issues,Resturant,Caucasian,32.5520013,-117.0430813,41
+Mass,Male,Legal,Mental Health Issues,School,Caucasian,41.9294736,-88.7503647,26
+Mass,Male,Legal,Mental Health Issues,School,Caucasian,37.9577016,-121.2907796,35
+Mass,Male,Legal,Mental Health Issues,Store,Caucasian,32.335941,-110.975132,19
+Mass,Male,Legal,Mental Health Issues,Store,Caucasian,33.741176,-118.1046356,9
+Mass,Male,Legal,Mental Health Issues,Workplace,Caucasian,41.6856325,-72.72983827,6
+Mass,Male,Legal,Mental Health Issues,Workplace,Caucasian,42.4894801,-83.1446485,10
+Mass,Male,Legal,Mental Health Issues,Workplace,Caucasian,44.977425,-93.310408,8
+Mass,Male,Legal,Mental Health Issues,Workplace,Caucasian,32.410842,-88.634539,15
+Mass,Male,Legal,Mental Health Issues,Workplace,Caucasian,42.500429,-71.075913,7
+Mass,Male,Legal,Mental Health Issues,Workplace,Caucasian,37.3688301,-122.0363496,11
+Mass,Male,Legal,Mental Health Issues,Workplace,Caucasian,33.850116,-84.377839,22
+Mass,Male,Legal,Mental Health Issues,Workplace,Caucasian,38.2542376,-85.759407,21
+Mass,Male,Legal,Mental Health Issues,Religious,Caucasian,29.273282,-98.056488,46
+Mass,Male,Legal,Mental Health Issues,Resturant,Caucasian,36.052521,-86.616944,8
+Mass,Male,Legal,Mental Health Issues,School,Caucasian,34.436283,-119.8714406,19
+Mass,Male,Legal,Mental Health Issues,School,Caucasian,26.30483,-80.269511,34
+Mass,Male,Legal,Mental Health Issues,Workplace,Caucasian,27.471043,-81.45847,5
+Spree,Male,Legal,Mental Health Issues,Movie Theatre,Caucasian,39.706038,-104.820594,82
+Spree,Male,Legal,Mental Health Issues,Religious,Caucasian,43.0605671,-88.1064787,11
+Spree,Male,Legal,Mental Health Issues,Store,Caucasian,28.0331886,-80.6429695,20
+Mass,Male,Legal,Mental Health Issues,Residence,Caucasian,34.008617,-118.494754,9
+Spree,Male,Legal,TBD,School,Asian,41.6606893,-91.5302214,7
+Mass,Male,Not Legal,Mental Health Issues,Workplace,Asian,37.765947,-122.406087,5
+Mass,Male,Legal,Mental Health Issues,Government Building,Asian,42.099802,-75.917723,18
+Mass,Male,Legal,Mental Health Issues,Private Building,Asian,33.9412127,-84.2135309,5
+Mass,Male,Legal,Mental Health Issues,School,Asian,37.8043808,-122.2708166,10
+Mass,Male,Legal,Mental Health Issues,School,Asian,37.2295733,-80.4139393,55
+Mass,Male,Legal,Mental Health Issues,Workplace,Asian,38.392496,-122.366528,3
+Spree,Male,Legal,Mental Health Issues,Workplace,Asian,21.320063,-157.876462,7
+Mass,Male,Not Legal,No Mental Health Issues,Government Building,African American,38.580093,-90.40691,8
+Mass,Male,Not Legal,No Mental Health Issues,Workplace,African American,33.5598586,-81.721952,7
+Mass,Male,Legal,No Mental Health Issues,Private Building,African American,30.3321838,-81.655651,14
+Mass,Male,Legal,No Mental Health Issues,Residence,African American,47.3129607,-122.3393665,5
+Mass,Male,Legal,No Mental Health Issues,Workplace,African American,41.908163,-87.879908,9
+Mass,Male,Legal,No Mental Health Issues,Workplace,African American,41.798764,-72.570068,11
+Mass,Male,Not Legal,TBD,Workplace,African American,39.452189,-76.309988,6
+Mass,Male,Unknown,TBD,Workplace,African American,39.675599,-104.844845,5
+Mass,Male,Unknown,TBD,Public,African American,36.746378,-119.800319,3
+Mass,Male,Legal,TBD,Workplace,African American,36.75442,-76.060378,16
+Mass,Male,Legal,TBD,Public,African American,32.7801052,-96.8000082,16
+Mass,Male,Legal,TBD,Workplace,African American,38.135992,-97.425145,17
+Mass,Male,Not Legal,Mental Health Issues,Resturant,African American,47.15277,-122.467308,5
+Mass,Male,Not Legal,Mental Health Issues,Workplace,African American,41.753725,-88.331057,11
+Spree,Male,Unknown,Mental Health Issues,Public,African American,30.433601,-91.081403,6
+Mass,Male,Legal,Mental Health Issues,Military,African American,38.874981,-76.99453,20
+Spree,Male,Legal,Mental Health Issues,Public,African American,40.7267682,-73.6342955,25
+Spree,Male,Legal,Mental Health Issues,Workplace,African American,26.119269,-80.104119,7
+Mass,Male & Female,Legal,TBD,Workplace,Race Unknown,34.075961,-117.27789,35
