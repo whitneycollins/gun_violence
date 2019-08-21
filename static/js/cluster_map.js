@@ -31,7 +31,7 @@ d3.json(link, function (response) {
             // console.log(response)
             // Add a new marker to the cluster group and bind a pop-up
             markers.addLayer(L.marker([points.geometry.coordinates[1], points.geometry.coordinates[0]])
-                .bindPopup(response.features[i].descriptor));
+                .bindPopup("<h2>Incident Date " + response.features[i].properties.date + "</h2> <hr> <h3>Total Victims " + response.features[i].properties.total_victims + "</h3>"));
         }
 
     }
