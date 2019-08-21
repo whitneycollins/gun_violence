@@ -1,11 +1,11 @@
 // Dimensions of sunburst.
-var width = 1200;
+var width = 600;
 var height = 600;
 var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
-  w: 175, h: 30, s: 3, t: 10
+  w: 175, h: 30, s: 3, t: 5
 };
 
 // Mapping of step names to colors.
@@ -186,7 +186,7 @@ function getAncestors(node) {
 function initializeBreadcrumbTrail() {
   // Add the svg area.
   var trail = d3.select("#sequence").append("svg:svg")
-      .attr("width", width)
+      .attr("width", 1200)
       .attr("height", 50)
       .attr("id", "trail");
   // Add the label at the end, for the percentage.

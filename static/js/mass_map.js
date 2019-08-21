@@ -18,4 +18,3 @@ var map = L.map("map", {
   d3.json(link, function(error, data) {
     L.geoJson(data).addTo(map);
   });
-  
