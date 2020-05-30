@@ -9,7 +9,7 @@
 
 ### Source of Data: 
 #### [Mass Shooting Data ](https://www.motherjones.com/politics/2012/12/mass-shootings-mother-jones-full-data/)
-#### [Gun Violence Data] (https://www.gunviolencearchive.org/) 
+#### [Gun Violence Data](https://www.gunviolencearchive.org/) 
 
 ## Questions/Sunburst_sections/Ideas:
 Seasonal component/Connection to heat(temperature of day) to shootings
