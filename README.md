@@ -8,8 +8,8 @@
 #### Gun violence in 2019 and mass shootings (1982-current) in the United States. Understanding the data and any trends within the US.
 
 ### Source of Data: 
-#### Mass Shooting Data 
-#### Gun Violence Data
+#### [Mass Shooting Data ](https://www.motherjones.com/politics/2012/12/mass-shootings-mother-jones-full-data/)
+#### [Gun Violence Data] (https://www.gunviolencearchive.org/) 
 
 ## Questions/Sunburst_sections/Ideas:
 Seasonal component/Connection to heat(temperature of day) to shootings
